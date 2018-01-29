@@ -67,6 +67,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent11 = new Intent(MainActivity.this,DialogActivity.class);
                 startActivity(intent11);
                 break;
+            case R.id.bt_QQLogin:
+                Intent intent12 = new Intent(MainActivity.this,QQLoginActivity.class);
+                startActivity(intent12);
+                break;
         }
     }
 }

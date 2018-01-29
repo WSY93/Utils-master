@@ -51,9 +51,5 @@ public class AppDataFileActivity extends AppCompatActivity implements View.OnCli
                 }
                 break;
         }
-
     }
-
-
-
 }
