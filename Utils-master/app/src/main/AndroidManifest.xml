@@ -83,6 +83,7 @@
             android:screenOrientation="behind"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity android:name=".QQLoginActivity" />
+        <activity android:name=".Utils.PeriscopeActivity"></activity>
     </application>
 
 </manifest>
