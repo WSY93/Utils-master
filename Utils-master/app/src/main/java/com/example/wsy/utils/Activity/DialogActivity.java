@@ -1,4 +1,4 @@
-package com.example.wsy.utils;
+package com.example.wsy.utils.Activity;
 
 
 import android.app.ProgressDialog;
@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.wsy.utils.R;
 import com.example.wsy.utils.Utils.CommonUtils;
 
 import java.util.Timer;

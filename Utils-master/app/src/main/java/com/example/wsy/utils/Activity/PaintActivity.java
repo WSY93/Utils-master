@@ -1,4 +1,4 @@
-package com.example.wsy.utils.Utils;
+package com.example.wsy.utils.Activity;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -10,6 +10,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.wsy.utils.R;
+import com.example.wsy.utils.Utils.DialogListener;
+import com.example.wsy.utils.Utils.HttpClientUtils;
+import com.example.wsy.utils.SelfDefined.WritePadDialog;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

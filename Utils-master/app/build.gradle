@@ -34,6 +34,7 @@ android {
 }
 
 dependencies {
+    implementation 'com.android.support:support-v4:25.4.0'
     compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
@@ -46,4 +47,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     implementation files('libs/open_sdk_r5990_lite.jar')
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.loopeer.library:cardstack:1.0.2'
+    compile 'com.android.support:design:25.4.0'
 }

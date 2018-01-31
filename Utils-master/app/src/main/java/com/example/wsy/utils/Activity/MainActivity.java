@@ -1,12 +1,11 @@
-package com.example.wsy.utils;
+package com.example.wsy.utils.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.example.wsy.utils.Utils.PaintActivity;
-import com.example.wsy.utils.Utils.PeriscopeActivity;
+import com.example.wsy.utils.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -75,6 +74,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.bt_Periscope:
                 Intent intent13 = new Intent(MainActivity.this, PeriscopeActivity.class);
                 startActivity(intent13);
+                break;
+            case R.id.bt_CardStack:
+                Intent intent14 = new Intent(MainActivity.this,CardStackViewActivity.class);
+                startActivity(intent14);
                 break;
         }
     }

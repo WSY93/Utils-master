@@ -45,25 +45,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SdCardFileActivity" />
-        <activity android:name=".AppDataFileActivity" />
-        <activity android:name=".AppInfoActivity" />
-        <activity android:name=".ScreenUtilActivity" />
-        <activity android:name=".TimeUtilActivity" />
-        <activity android:name=".NetUtilActivity" />
-        <activity android:name=".SharedPreferencesUtilActivity" />
-        <activity android:name=".RuntimePermissionsActivity" />
-        <activity android:name=".CameraActivity" />
-        <activity android:name=".Utils.PaintActivity" />
-        <activity android:name=".UpdateActivity" />
-        <activity android:name=".DialogActivity" />
+        <activity android:name=".Activity.SdCardFileActivity" />
+        <activity android:name=".Activity.AppDataFileActivity" />
+        <activity android:name=".Activity.AppInfoActivity" />
+        <activity android:name=".Activity.ScreenUtilActivity" />
+        <activity android:name=".Activity.TimeUtilActivity" />
+        <activity android:name=".Activity.NetUtilActivity" />
+        <activity android:name=".Activity.SharedPreferencesUtilActivity" />
+        <activity android:name=".Activity.RuntimePermissionsActivity" />
+        <activity android:name=".Activity.CameraActivity" />
+        <activity android:name=".Activity.PaintActivity" />
+        <activity android:name=".Activity.UpdateActivity" />
+        <activity android:name=".Activity.DialogActivity" />
         <activity
             android:name="com.tencent.tauth.AuthActivity"
             android:launchMode="singleTask"
@@ -82,8 +82,9 @@
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="behind"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity android:name=".QQLoginActivity" />
-        <activity android:name=".Utils.PeriscopeActivity"></activity>
+        <activity android:name=".Activity.QQLoginActivity" />
+        <activity android:name=".Activity.PeriscopeActivity" />
+        <activity android:name=".Activity.CardStackViewActivity"></activity>
     </application>
 
 </manifest>

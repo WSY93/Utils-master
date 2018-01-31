@@ -1,4 +1,4 @@
-package com.example.wsy.utils.Utils;
+package com.example.wsy.utils.SelfDefined;
 
 
 import android.app.Dialog;
@@ -19,6 +19,7 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 
 import com.example.wsy.utils.R;
+import com.example.wsy.utils.Utils.DialogListener;
 
 /**
  * Created by wsy on 2017/10/27.

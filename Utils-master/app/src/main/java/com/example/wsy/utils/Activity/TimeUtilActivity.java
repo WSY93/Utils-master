@@ -1,4 +1,4 @@
-package com.example.wsy.utils;
+package com.example.wsy.utils.Activity;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.wsy.utils.R;
 import com.example.wsy.utils.Utils.TimeUtil;
 
 public class TimeUtilActivity extends AppCompatActivity implements View.OnClickListener{

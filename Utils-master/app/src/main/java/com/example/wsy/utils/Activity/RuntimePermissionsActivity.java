@@ -1,4 +1,4 @@
-package com.example.wsy.utils;
+package com.example.wsy.utils.Activity;
 
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.wsy.utils.R;
 import com.example.wsy.utils.Utils.CommonUtils;
 import com.example.wsy.utils.Utils.PermissionUtils;
 

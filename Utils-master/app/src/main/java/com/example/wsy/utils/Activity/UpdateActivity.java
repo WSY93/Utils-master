@@ -1,10 +1,11 @@
-package com.example.wsy.utils;
+package com.example.wsy.utils.Activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.wsy.utils.R;
 import com.example.wsy.utils.Utils.DownloadUtils;
 import com.example.wsy.utils.Utils.PermissionUtils;
 
