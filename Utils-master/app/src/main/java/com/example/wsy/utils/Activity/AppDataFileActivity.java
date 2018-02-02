@@ -27,7 +27,7 @@ public class AppDataFileActivity extends AppCompatActivity implements View.OnCli
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnWrite:
-                boolean isWrite =  FileUtil.writeToDataAppFile(this,fileName,et_content.getText().toString());
+                boolean isWrite =  FileUtil.writeToDataAppFile(this,fileName,et_content.getText().toString(),true);
                 if (isWrite){
                     CommonUtils.ToastShowShort(this,"写入成功");
 

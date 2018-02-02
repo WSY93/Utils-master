@@ -27,11 +27,18 @@ public class FileUtil {
      *       2.MODE_APPEND:该模式下会检查文件是否存在，文件存在则在文件内容末尾开始追加内容，不存在则创建文件并写入
      *       3.MODE_WORLD_READABLE:表示该文件可以被其他应用读取
      *       4.MODE_WORLD_WRITEABLE：表示该文件可以被其他应用写入
+     *
+     *       mode表示是否追加，true表示追加，false表示覆盖
      */
 
-    public static boolean  writeToDataAppFile(Context context,String fileName,String content) {
+    public static boolean  writeToDataAppFile(Context context,String fileName,String content,boolean mode) {
+        FileOutputStream fout;
         try{
-            FileOutputStream fout = context.openFileOutput(fileName, MODE_PRIVATE);
+            if (mode){
+                fout = context.openFileOutput(fileName, Context.MODE_APPEND);
+            }else {
+                fout = context.openFileOutput(fileName, Context.MODE_PRIVATE);
+            }
             byte [] bytes = content.getBytes();
             fout.write(bytes);
             fout.close();//及时关闭
