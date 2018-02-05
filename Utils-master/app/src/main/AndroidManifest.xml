@@ -84,7 +84,10 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity android:name=".Activity.QQLoginActivity" />
         <activity android:name=".Activity.PeriscopeActivity" />
-        <activity android:name=".Activity.CardStackViewActivity"></activity>
+        <activity android:name=".Activity.CardStackViewActivity" />
+        <activity android:name=".Activity.StepViewActivity"
+            android:theme="@style/StepViewActivityTheme"
+            ></activity>
     </application>
 
 </manifest>

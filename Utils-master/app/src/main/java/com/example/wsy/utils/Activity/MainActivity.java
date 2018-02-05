@@ -79,6 +79,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent14 = new Intent(MainActivity.this,CardStackViewActivity.class);
                 startActivity(intent14);
                 break;
+            case R.id.bt_stepview:
+                Intent intent15 = new Intent(MainActivity.this,StepViewActivity.class);
+                startActivity(intent15);
+                break;
         }
     }
 }

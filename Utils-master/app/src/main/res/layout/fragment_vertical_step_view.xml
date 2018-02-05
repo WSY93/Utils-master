@@ -1,0 +1,16 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/powderblue">
+
+    <com.example.wsy.utils.SelfDefined.StepView.VerticalStepView
+        android:id="@+id/step_view0"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="vertical setpview"
+        >
+
+    </com.example.wsy.utils.SelfDefined.StepView.VerticalStepView>
+
+</android.support.v4.widget.NestedScrollView>

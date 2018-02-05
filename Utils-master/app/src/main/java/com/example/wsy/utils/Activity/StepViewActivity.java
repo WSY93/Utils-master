@@ -1,6 +1,7 @@
 package com.example.wsy.utils.Activity;
 
-import android.os.Handler;
+
+
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -12,65 +13,62 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 
+import com.example.wsy.utils.Fragment.HorizontalStepViewFragment;
 import com.example.wsy.utils.Fragment.MyCardStackFragment;
 import com.example.wsy.utils.Fragment.TestCardStackFragment;
+import com.example.wsy.utils.Fragment.VerticalStepViewFragment;
 import com.example.wsy.utils.R;
-
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CardStackViewActivity extends AppCompatActivity  {
+public class StepViewActivity extends AppCompatActivity {
+    private TabLayout tb;
+    private ViewPager vp;
 
-    private TabLayout mTabTl;
-    private ViewPager mContentVp;
-
-    private List<String> tabIndicators;
     private List<Fragment> tabFragments;
-    private ContentPagerAdapter contentAdapter;
-
-
-
-
+    private List<String> tabIndicators;
+    private StepViewFragmentAdapter svfa;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_card_stack_view);
-        setTitle("酷炫卡片折叠交互");
-        mTabTl = (TabLayout) findViewById(R.id.tabLayout);
-        mContentVp = (ViewPager) findViewById(R.id.viewPager);
+        setContentView(R.layout.activity_step_view);
+        setTitle("StepView");
+        tb = (TabLayout) findViewById(R.id.stepview_tablayout);
+        vp = (ViewPager) findViewById(R.id.stepview_vp);
 
         initContent();
         initTab();
     }
+
     private void initTab(){
-        mTabTl.setTabMode(TabLayout.MODE_FIXED);//设置tab沾满屏幕
+        tb.setTabMode(TabLayout.MODE_FIXED);//设置tab沾满屏幕
 
-        mTabTl.setTabTextColors(ContextCompat.getColor(this, R.color.dodgerblue), ContextCompat.getColor(this, R.color.orange));
-        mTabTl.setSelectedTabIndicatorColor(ContextCompat.getColor(this, R.color.orange));
+        tb.setTabTextColors(ContextCompat.getColor(this, R.color.dodgerblue), ContextCompat.getColor(this, R.color.orange));
+        tb.setSelectedTabIndicatorColor(ContextCompat.getColor(this, R.color.orange));
 
-        ViewCompat.setElevation(mTabTl, 10);
-        mTabTl.setupWithViewPager(mContentVp);
+        ViewCompat.setElevation(tb, 10);
+        tb.setupWithViewPager(vp);
     }
 
     private void initContent(){
         tabIndicators = new ArrayList<>();
-        tabIndicators.add("示例");
-        tabIndicators.add("我的");
+        tabIndicators.add("HorizontalStepView");
+        tabIndicators.add("VerticalStepView");
 //        tabIndicators.add("我是谁");
 
         tabFragments = new ArrayList<>();
-        tabFragments.add(new TestCardStackFragment());
-        tabFragments.add(new MyCardStackFragment());
+        tabFragments.add(new HorizontalStepViewFragment());
+        tabFragments.add(new VerticalStepViewFragment());
 //        tabFragments.add(new MyCardStackFragment());
 
-        contentAdapter = new ContentPagerAdapter(getSupportFragmentManager());
-        mContentVp.setAdapter(contentAdapter);
+        svfa = new StepViewFragmentAdapter(getSupportFragmentManager());
+        vp.setAdapter(svfa);
     }
 
-    class ContentPagerAdapter extends FragmentPagerAdapter {
+    class StepViewFragmentAdapter extends FragmentPagerAdapter {
 
-        public ContentPagerAdapter(FragmentManager fm) {
+        public StepViewFragmentAdapter(FragmentManager fm) {
             super(fm);
         }
 
@@ -89,8 +87,5 @@ public class CardStackViewActivity extends AppCompatActivity  {
             return tabIndicators.get(position);
         }
     }
-
-
-
 
 }
