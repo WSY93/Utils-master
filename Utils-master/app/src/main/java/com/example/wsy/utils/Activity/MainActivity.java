@@ -83,6 +83,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent15 = new Intent(MainActivity.this,StepViewActivity.class);
                 startActivity(intent15);
                 break;
+            case R.id.second:
+                Intent intent16 = new Intent(MainActivity.this,Main2Activity.class);
+                startActivity(intent16);
+                break;
         }
     }
 }

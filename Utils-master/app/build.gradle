@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
+    compileSdkVersion 26
     buildToolsVersion '26.0.2'
     packagingOptions {
         exclude 'META-INF/DEPENDENCIES.txt'
@@ -20,7 +20,7 @@ android {
     defaultConfig {
         applicationId "com.example.wsy.utils"
         minSdkVersion 17
-        targetSdkVersion 25
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -49,4 +49,6 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.loopeer.library:cardstack:1.0.2'
     compile 'com.android.support:design:25.4.0'
+    implementation files('libs/ocr-sdk.jar')
+    implementation project(':ocr_ui')
 }
